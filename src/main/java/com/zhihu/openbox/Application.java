@@ -50,7 +50,7 @@ public class Application {
         //等待2秒用于页面加载，保证Cookie响应全部获取。
         Thread.sleep(2000);
         //获取Cookie并打印
-        Set<Cookie> cookies=webDriver.manage().getCookies();
+        Set<Cookie> cookies = webDriver.manage().getCookies();
         Iterator iterator=cookies.iterator();
         while (iterator.hasNext()){
             System.out.println(iterator.next().toString());
@@ -68,9 +68,20 @@ public class Application {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(By.name("password")))
                 .sendKeys("123456789qq");
 
+        //点击注册
+        webDriver.findElement(By.className("Register-getIn")).click();
+
+        //填写身份
+        webDriver.findElement(
+                By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/div[1]/button")).click();
+
+        //进入知乎
+        webDriver.findElement(
+                By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
+
         //关闭WebDriver,否则并不自动关闭
 
-//        webDriver.close();
+        webDriver.close();
     }
 
     public static String retry(String phoneNo) throws InterruptedException {
@@ -93,6 +104,4 @@ public class Application {
         }
         return "";
     }
-
-
 }
