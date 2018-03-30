@@ -1,5 +1,6 @@
 package com.zhihu.openbox;
 
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -44,10 +45,15 @@ public class DefaultHandle extends AbstractHandleService{
         fillPhoneNO(phoneNo);
         //接收短信验证码
         String sms = retry(phoneNo, DEFAULT_RETRY_COUNT);
+        if (StringUtils.isEmpty(sms)) {
+            logger.info("手机号码 {} 获取验证码次数超过规定次数，跳过", phoneNo);
+            return;
+        }
         fillPhoneSms(sms);
         String password = fillUserDetails();
         fillIdandFinish();
         Utils.appendFileContents(phoneNo, password, Application.DEFAULT_DATA_FILE);
+
     }
 
     /**
@@ -94,7 +100,7 @@ public class DefaultHandle extends AbstractHandleService{
     /**
      * 点击进入知乎
      */
-    public void fillIdandFinish() {
+    public void fillIdandFinish() throws InterruptedException {
         //点击注册
         webDriver.findElement(By.className("Register-getIn")).click();
         //填写身份
@@ -103,6 +109,13 @@ public class DefaultHandle extends AbstractHandleService{
         //进入知乎
         webDriver.findElement(
                 By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
+        System.out.println("开始退出");
+        Thread.sleep(2000);
+        //退出登录
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(
+                By.className("AppHeader-profileEntry"))).click();
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(
+                By.linkText("退出"))).click();
     }
 
     /**
