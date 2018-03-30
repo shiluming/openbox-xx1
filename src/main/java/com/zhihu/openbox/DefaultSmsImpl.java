@@ -7,11 +7,14 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.regex.Pattern;
 
 public class DefaultSmsImpl implements ISms{
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     private final String token = "00437994798866bf1957c6a80dde9273d49f84df";
 
@@ -24,17 +27,16 @@ public class DefaultSmsImpl implements ISms{
     CloseableHttpClient build = HttpClientBuilder.create().build();
 
     public String getPhoneNO() {
-
         HttpGet get = new HttpGet(GET_PHONE_NO);
         String phone = "";
         try {
             CloseableHttpResponse execute = build.execute(get);
             HttpEntity entity = execute.getEntity();
-            StatusLine statusLine = execute.getStatusLine();
             String result = EntityUtils.toString(entity);
             String[] split = result.split("\\|");
             phone = split[1];
         } catch (IOException e) {
+            logger.info("获取第三方短信通道发生错误，请检查账号余额，网络是否正常， 错误原因 e = {}", e);
             e.printStackTrace();
         }
         return phone;
@@ -46,9 +48,9 @@ public class DefaultSmsImpl implements ISms{
         HttpGet get = new HttpGet(format);
         try {
             CloseableHttpResponse execute = build.execute(get);
-            StatusLine statusLine = execute.getStatusLine();
             result = EntityUtils.toString(execute.getEntity(), "utf-8");
         } catch (IOException e) {
+            logger.info("解析第三方短信通道验证码发生错误，请检查网络是否正常，错误原因 e = {}", e);
             e.printStackTrace();
         }
         return result;
