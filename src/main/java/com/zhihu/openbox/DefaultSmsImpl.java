@@ -34,6 +34,10 @@ public class DefaultSmsImpl implements ISms{
             HttpEntity entity = execute.getEntity();
             String result = EntityUtils.toString(entity);
             String[] split = result.split("\\|");
+            if (null == split || split.length == 1) {
+                logger.info("第三方短信通道返回数据错误 value = {}", result);
+                return "10086";
+            }
             phone = split[1];
         } catch (IOException e) {
             logger.info("获取第三方短信通道发生错误，请检查账号余额，网络是否正常， 错误原因 e = {}", e);

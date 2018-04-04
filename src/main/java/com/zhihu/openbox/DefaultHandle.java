@@ -2,6 +2,7 @@ package com.zhihu.openbox;
 
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,6 +26,8 @@ public class DefaultHandle extends AbstractHandleService{
 
     public static final int DEFAULT_RETRY_COUNT = 10;
 
+    public static final String ERROR_PHONE = "10086";
+
     static {
         System.getProperties().setProperty(DRIVER_NAME, DRIVER_APPLICATION_NAME);
     }
@@ -42,7 +45,26 @@ public class DefaultHandle extends AbstractHandleService{
 
     public void handler() throws InterruptedException, IOException {
         String phoneNo = iSms.getPhoneNO();
+        if (ERROR_PHONE.equals(phoneNo)) {
+            return ;
+        }
         fillPhoneNO(phoneNo);
+        boolean b2 = hashCaptcharContainer();
+        if (b2) {
+            boolean b = hasEnglishCaptchar();
+            if (b) {
+                logger.info("数字验证码显示中， 跳过注册");
+                return;
+            }
+            boolean b1 = hasChineseCaptchar();
+            if (b1) {
+                logger.info("中文验证码显示中，跳过注册");
+                return;
+            }
+        }
+        Thread.sleep(1000);
+        //点击获取验证码
+        webDriver.findElement(By.className("SignFlow-smsInputButton")).click();
         //接收短信验证码
         String sms = retry(phoneNo, DEFAULT_RETRY_COUNT);
         if (StringUtils.isEmpty(sms)) {
@@ -67,8 +89,6 @@ public class DefaultHandle extends AbstractHandleService{
         webDriverWait.until(
                 ExpectedConditions.elementToBeClickable(By.name("phoneNo")))
                 .sendKeys(phoneNo);
-        //点击获取验证码
-        webDriver.findElement(By.className("SignFlow-smsInputButton")).click();
     }
 
     /**
@@ -91,7 +111,7 @@ public class DefaultHandle extends AbstractHandleService{
     public String fillUserDetails() {
         String password = Utils.generatePsw(10);
         webDriverWait.until(ExpectedConditions.elementToBeClickable(By.name("fullname")))
-                .sendKeys("aguiagui");
+                .sendKeys(Utils.generateUserName(5));
         webDriverWait.until(ExpectedConditions.elementToBeClickable(By.name("password")))
                 .sendKeys(password);
         return password;
@@ -109,7 +129,6 @@ public class DefaultHandle extends AbstractHandleService{
         //进入知乎
         webDriver.findElement(
                 By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
-        System.out.println("开始退出");
         Thread.sleep(2000);
         //退出登录
         webDriverWait.until(ExpectedConditions.elementToBeClickable(
@@ -151,6 +170,55 @@ public class DefaultHandle extends AbstractHandleService{
             return matcher.group();
         }
         return "";
+    }
+
+    /**
+     * 判断是否有数字验证码
+     * @return
+     */
+    private boolean hasEnglishCaptchar() {
+        WebElement element = null;
+        try {
+            element = webDriver.findElement(By.className("Captcha-englishImg"));
+        }catch (Exception e) {
+            element = null;
+        }
+        if (null == element) {
+            return false;
+        }
+        return true;
+    }
+
+    private boolean hashCaptcharContainer() {
+        WebElement element = null;
+        try {
+            element = webDriver.findElement(By.className("SignFlow-captchaContainer"));
+        }catch (Exception e) {
+            element = null;
+        }
+        //是否可见
+        boolean displayed = element.isDisplayed();
+        if (displayed) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 判断是否有中文验证码
+     * @return
+     */
+    private boolean hasChineseCaptchar() {
+        WebElement element = null;
+        try {
+            element = webDriver.findElement(By.className("Captcha-chineseImg"));
+        }catch (Exception e) {
+            element = null;
+        }
+        if (null == element) {
+            return false;
+        }
+        return true;
     }
 
 }

@@ -30,6 +30,14 @@ public class Utils {
     'Y', 'Z'};
 
     /**
+     * 用户名
+     */
+    private static final char[] USERNAME_CHAR_SEED = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j',
+            'i', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
+            'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+
+    /**
      * 数字密码
      */
     private static final char[] PASSWORD_NUM_SEED = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
@@ -54,6 +62,21 @@ public class Utils {
             int i2 = random.nextInt(PASSWORD_NUM_SEED.length);
             sb.setCharAt(9, PASSWORD_NUM_SEED[i2]);
             System.out.println("替换后：" + sb.toString());
+        }
+        return sb.toString();
+    }
+
+    /**
+     * 用户名生成
+     * @param number
+     * @return
+     */
+    public static String generateUserName(final int number) {
+        Random random = new Random();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < number; i++) {
+            int i1 = random.nextInt(USERNAME_CHAR_SEED.length);
+            sb.append(USERNAME_CHAR_SEED[i1]);
         }
         return sb.toString();
     }
