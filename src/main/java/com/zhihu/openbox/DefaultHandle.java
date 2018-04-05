@@ -53,6 +53,8 @@ public class DefaultHandle extends AbstractHandleService{
         fillPhoneNO(phoneNo);
         boolean b2 = hashCaptcharContainer();
         if (b2) {
+            //是否手机号码
+            iSms.releasePhoneNo(phoneNo);
             boolean b = hasEnglishCaptchar();
             if (b) {
                 logger.info("数字验证码显示中， 跳过注册");

@@ -13,4 +13,11 @@ public interface ISms {
      * @return
      */
     String getPhoneSms(String phoneNo);
+
+    /**
+     * 释放手机号码
+     * @param phoneNo
+     * @return
+     */
+    String releasePhoneNo(String phoneNo);
 }

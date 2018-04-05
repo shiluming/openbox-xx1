@@ -1,5 +1,6 @@
 package com.zhihu.openbox;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.StatusLine;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -24,6 +25,9 @@ public class DefaultSmsImpl implements ISms{
     private String GET_PHONE_SMS = "http://api.fxhyd.cn/UserInterface.aspx?" +
             "action=getsms&token="+token+"&itemid=891&mobile=%s&release=1";
 
+    private String RELEASE_PHONE_ON = "http://api.fxhyd.cn/UserInterface.aspx?" +
+            "action=release&token="+ token +"&itemid=891&mobile=%s";
+
     CloseableHttpClient build = HttpClientBuilder.create().build();
 
     public String getPhoneNO() {
@@ -36,6 +40,11 @@ public class DefaultSmsImpl implements ISms{
             String[] split = result.split("\\|");
             if (null == split || split.length == 1) {
                 logger.info("第三方短信通道返回数据错误 value = {}", result);
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 return "10086";
             }
             phone = split[1];
@@ -58,5 +67,20 @@ public class DefaultSmsImpl implements ISms{
             e.printStackTrace();
         }
         return result;
+    }
+
+    public String releasePhoneNo(String phoneNo) {
+        String format = String.format(RELEASE_PHONE_ON, phoneNo);
+        HttpGet get = new HttpGet(format);
+        try {
+            CloseableHttpResponse execute = build.execute(get);
+            String s = EntityUtils.toString(execute.getEntity());
+            if (StringUtils.isNotEmpty(s) || s.contains("success")) {
+                logger.info("释放手机号码 {} 成功 ", phoneNo);
+            }
+        } catch (Exception e) {
+            logger.info("是否手机号码 phone = {} 发送错误", phoneNo);
+        }
+        return null;
     }
 }
