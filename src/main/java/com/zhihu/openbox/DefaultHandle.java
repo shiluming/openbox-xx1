@@ -72,6 +72,7 @@ public class DefaultHandle extends AbstractHandleService{
         //接收短信验证码
         String sms = retry(phoneNo, DEFAULT_RETRY_COUNT);
         if (StringUtils.isEmpty(sms)) {
+            iSms.releasePhoneNo(phoneNo);
             logger.info("手机号码 {} 获取验证码次数超过规定次数，跳过", phoneNo);
             return;
         }
@@ -139,8 +140,14 @@ public class DefaultHandle extends AbstractHandleService{
         webDriver.get(ZHIHU_INDEX);
         webDriver.findElement(
                 By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
-        webDriverWait.until(ExpectedConditions.elementToBeClickable(
-                By.className("AppHeader-profileEntry"))).click();
+        try {
+            webDriverWait.until(ExpectedConditions.elementToBeClickable(
+                    By.className("AppHeader-profileEntry"))).click();
+        } catch (Exception e) {
+            logger.info("发生预期错误，错误码：1008");
+            webDriverWait.until(ExpectedConditions.elementToBeClickable(
+                    By.className("AppHeader-profileEntry"))).click();
+        }
         webDriverWait.until(ExpectedConditions.elementToBeClickable(
                 By.linkText("退出"))).click();
     }
