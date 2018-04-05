@@ -18,6 +18,8 @@ public class DefaultHandle extends AbstractHandleService{
 
     public static final String REGISTER_URL = "https://www.zhihu.com/signup?next=%2F";
 
+    public static final String ZHIHU_INDEX = "https://www.zhihu.com/";
+
     public static final int DEFAULT_WAIT_SECOND = 10;
 
     public static final String DRIVER_NAME = "webdriver.chrome.driver";
@@ -130,11 +132,33 @@ public class DefaultHandle extends AbstractHandleService{
         webDriver.findElement(
                 By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
         Thread.sleep(2000);
+        uploadAvatar();
         //退出登录
+        webDriver.get(ZHIHU_INDEX);
+        webDriver.findElement(
+                By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
         webDriverWait.until(ExpectedConditions.elementToBeClickable(
                 By.className("AppHeader-profileEntry"))).click();
         webDriverWait.until(ExpectedConditions.elementToBeClickable(
                 By.linkText("退出"))).click();
+    }
+
+    public void uploadAvatar() {
+        logger.info("开始上传头像");
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(
+                By.className("AppHeader-profileEntry"))).click();
+        //进入我的主页
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(
+                By.linkText("我的主页"))).click();
+
+//        webDriverWait.until(ExpectedConditions.elementToBeClickable(
+//                By.className("UserAvatar-inner"))).click();
+
+        //调用 input file 上传文件
+        webDriver.findElement(By.xpath("//*[@id=\"ProfileHeader\"]/div/div[2]/div/div[1]/input"))
+                .sendKeys("c:\\touxiang.jpg");////*[@id="ProfileHeader"]/div/div[2]/div/div[1]/input
+        webDriver.findElement(By.xpath("/html/body/div[3]/div/span/div/div[2]/div/div[2]/div/div[3]/button")).click();
+        //
     }
 
     /**
@@ -219,6 +243,13 @@ public class DefaultHandle extends AbstractHandleService{
             return false;
         }
         return true;
+    }
+
+    private void uploadImage() {
+        // UserAvatarEditor-maskInner
+        webDriverWait.until(ExpectedConditions
+                .elementToBeClickable(By.className("UserAvatarEditor-maskInner"))).sendKeys();
+
     }
 
 }
