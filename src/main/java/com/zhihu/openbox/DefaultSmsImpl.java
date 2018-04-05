@@ -22,7 +22,7 @@ public class DefaultSmsImpl implements ISms{
             "action=getmobile&token="+token+"&itemid=891&excludeno=";
 
     private String GET_PHONE_SMS = "http://api.fxhyd.cn/UserInterface.aspx?" +
-            "action=getsms&token="+token+"&itemid=891&mobile=%s";
+            "action=getsms&token="+token+"&itemid=891&mobile=%s&release=1";
 
     CloseableHttpClient build = HttpClientBuilder.create().build();
 
