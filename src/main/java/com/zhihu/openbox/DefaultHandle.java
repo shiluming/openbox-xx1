@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -26,14 +27,21 @@ public class DefaultHandle extends AbstractHandleService{
 
     public static final String DRIVER_APPLICATION_NAME = "chromedriver.exe";
 
-    public static final int DEFAULT_RETRY_COUNT = 10;
+    public static final int DEFAULT_RETRY_COUNT = 20;
 
     public static final String ERROR_PHONE = "10086";
 
+    public static String[] DEFAULT_FILE_NAMES = null;
+
+    public static final String DEFAULT_IMAGES = "images";
+
+    public static final String BASE_DIR = "c:\\" + DEFAULT_IMAGES + "\\";
+
+    public static Random DEFAULT_RANDOM = new Random();
     static {
         System.getProperties().setProperty(DRIVER_NAME, DRIVER_APPLICATION_NAME);
+        DEFAULT_FILE_NAMES = Utils.getFileNames(BASE_DIR);
     }
-
     public DefaultHandle() {
         webDriver = new ChromeDriver();
         //全局隐式等待
@@ -136,23 +144,29 @@ public class DefaultHandle extends AbstractHandleService{
                 By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
         Thread.sleep(2000);
         uploadAvatar();
+        Thread.sleep(2000);
         //退出登录
         webDriver.get(ZHIHU_INDEX);
         webDriver.findElement(
                 By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
         try {
+            Thread.sleep(4000);
             webDriverWait.until(ExpectedConditions.elementToBeClickable(
                     By.className("AppHeader-profileEntry"))).click();
         } catch (Exception e) {
-            logger.info("发生预期错误，错误码：1008");
-            webDriverWait.until(ExpectedConditions.elementToBeClickable(
-                    By.className("AppHeader-profileEntry"))).click();
+            logger.info("发生预期错误，错误码：1008, e = {}", e);
+            WebElement element = webDriver.findElement(By.className("AppHeader-profileEntry"));
+            Thread.sleep(1000);
+            if (element.isEnabled()) {
+                logger.info("可用的状态");
+                element.click();
+            }
         }
         webDriverWait.until(ExpectedConditions.elementToBeClickable(
                 By.linkText("退出"))).click();
     }
 
-    public void uploadAvatar() {
+    public void uploadAvatar() throws InterruptedException {
         logger.info("开始上传头像");
         webDriverWait.until(ExpectedConditions.elementToBeClickable(
                 By.className("AppHeader-profileEntry"))).click();
@@ -162,10 +176,12 @@ public class DefaultHandle extends AbstractHandleService{
 
 //        webDriverWait.until(ExpectedConditions.elementToBeClickable(
 //                By.className("UserAvatar-inner"))).click();
-
+        int i = DEFAULT_RANDOM.nextInt(DEFAULT_FILE_NAMES.length);
+        String defaultFileName = DEFAULT_FILE_NAMES[i];
         //调用 input file 上传文件
         webDriver.findElement(By.xpath("//*[@id=\"ProfileHeader\"]/div/div[2]/div/div[1]/input"))
-                .sendKeys("c:\\touxiang.jpg");////*[@id="ProfileHeader"]/div/div[2]/div/div[1]/input
+                .sendKeys(BASE_DIR + defaultFileName);////*[@id="ProfileHeader"]/div/div[2]/div/div[1]/input
+        Thread.sleep(2000);
         webDriver.findElement(By.xpath("/html/body/div[3]/div/span/div/div[2]/div/div[2]/div/div[3]/button")).click();
         //
     }
@@ -185,7 +201,7 @@ public class DefaultHandle extends AbstractHandleService{
             if (phoneSms.contains("success")) {
                 return parseSmsCode(phoneSms);
             }
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         }
         return "";
     }

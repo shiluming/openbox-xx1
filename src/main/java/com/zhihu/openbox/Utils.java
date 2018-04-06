@@ -2,13 +2,11 @@ package com.zhihu.openbox;
 
 
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -56,12 +54,10 @@ public class Utils {
         }
         boolean matches = sb.toString().matches(".*\\d+.*");
         if (!matches) {
-            System.out.println("替换前：" + sb.toString());
             int i1 = random.nextInt(PASSWORD_NUM_SEED.length);
             sb.setCharAt(8, PASSWORD_NUM_SEED[i1]);
             int i2 = random.nextInt(PASSWORD_NUM_SEED.length);
             sb.setCharAt(9, PASSWORD_NUM_SEED[i2]);
-            System.out.println("替换后：" + sb.toString());
         }
         return sb.toString();
     }
@@ -108,7 +104,7 @@ public class Utils {
             createFile(name);
         }
         OutputStreamWriter writer = new FileWriter(file, true);
-        writer.append(phoneNo + "------------" + password + "\r\n");
+        writer.append(phoneNo + "----" + password + "\r\n");
         writer.flush();
         writer.close();
         return true;
@@ -120,10 +116,26 @@ public class Utils {
             createFile(fileName);
         }
         OutputStreamWriter writer = new FileWriter(file, true);
-        DateFormat format = new SimpleDateFormat("yyyy-MM-dd mm:dd SSS");
+        DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         writer.append("###### [ " +format.format(new Date()) + " ]###### \r\n");
         writer.flush();
         writer.close();
         return true;
+    }
+
+    public static String[] getFileNames(String dir) {
+        File file = new File(dir);
+        if (!file.isDirectory() || !file.exists()) {
+            file.mkdir();
+        }
+        String[] list = file.list(new FilenameFilter() {
+            public boolean accept(File dir, String name) {
+                if (name.endsWith("jpg") || name.endsWith("png")) {
+                    return true;
+                }
+                return false;
+            }
+        });
+        return list;
     }
 }
