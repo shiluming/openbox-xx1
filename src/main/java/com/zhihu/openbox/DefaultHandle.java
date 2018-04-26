@@ -59,17 +59,18 @@ public class DefaultHandle extends AbstractHandleService{
             return ;
         }
         fillPhoneNO(phoneNo);
-        boolean b2 = hashCaptcharContainer();
-        if (b2) {
+//        boolean b2 = hashCaptcharContainer();
+        if (true) {
             //是否手机号码
-            iSms.releasePhoneNo(phoneNo);
             boolean b = hasEnglishCaptchar();
             if (b) {
+                iSms.releasePhoneNo(phoneNo);
                 logger.info("数字验证码显示中， 跳过注册");
                 return;
             }
             boolean b1 = hasChineseCaptchar();
             if (b1) {
+                iSms.releasePhoneNo(phoneNo);
                 logger.info("中文验证码显示中，跳过注册");
                 return;
             }
@@ -86,8 +87,8 @@ public class DefaultHandle extends AbstractHandleService{
         }
         fillPhoneSms(sms);
         String password = fillUserDetails();
-        fillIdandFinish();
         Utils.appendFileContents(phoneNo, password, Application.DEFAULT_DATA_FILE);
+        fillIdandFinish();
 
     }
 
@@ -137,8 +138,12 @@ public class DefaultHandle extends AbstractHandleService{
         //点击注册
         webDriver.findElement(By.className("Register-getIn")).click();
         //填写身份
-        webDriver.findElement(
-                By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/div[1]/button")).click();
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/div[1]/button")
+        )).click();
+//        webDriver.findElement(
+//                By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/div[1]/button")).click();
+        ////*[@id="root"]/div/main/div/div[2]/div/div[2]/div[1]/button
         //进入知乎
         webDriver.findElement(
                 By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
@@ -147,8 +152,9 @@ public class DefaultHandle extends AbstractHandleService{
         Thread.sleep(2000);
         //退出登录
         webDriver.get(ZHIHU_INDEX);
-        webDriver.findElement(
-                By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
+//        webDriver.findElement(
+//                By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/button")).click();
+        ////*[@id="Popover-52840-82433-toggle"]
         try {
             Thread.sleep(4000);
             webDriverWait.until(ExpectedConditions.elementToBeClickable(
@@ -179,7 +185,7 @@ public class DefaultHandle extends AbstractHandleService{
         int i = DEFAULT_RANDOM.nextInt(DEFAULT_FILE_NAMES.length);
         String defaultFileName = DEFAULT_FILE_NAMES[i];
         //调用 input file 上传文件
-        webDriver.findElement(By.xpath("//*[@id=\"ProfileHeader\"]/div/div[2]/div/div[1]/input"))
+        webDriver.findElement(By.xpath("//*[@id=\"ProfileHeader\"]/div/div[2]/div/div[1]/div/input"))////*[@id="ProfileHeader"]/div/div[2]/div/div[1]/div/input
                 .sendKeys(BASE_DIR + defaultFileName);////*[@id="ProfileHeader"]/div/div[2]/div/div[1]/input
         Thread.sleep(2000);
         webDriver.findElement(By.xpath("/html/body/div[3]/div/span/div/div[2]/div/div[2]/div/div[3]/button")).click();
@@ -228,22 +234,31 @@ public class DefaultHandle extends AbstractHandleService{
     private boolean hasEnglishCaptchar() {
         WebElement element = null;
         try {
-            element = webDriver.findElement(By.className("Captcha-englishImg"));
+            element = webDriver.findElement(By.className("Captcha-englishContainer"));//
         }catch (Exception e) {
+            logger.error("数字验证码：{}", e);
             element = null;
         }
         if (null == element) {
             return false;
         }
-        return true;
+        boolean displayed = element.isDisplayed();
+        if (displayed) {
+            return true;
+        }
+        return false;
     }
 
     private boolean hashCaptcharContainer() {
         WebElement element = null;
         try {
-            element = webDriver.findElement(By.className("SignFlow-captchaContainer"));
+            element = webDriver.findElement(By.className("Captcha-englishImg"));
         }catch (Exception e) {
+            logger.error("出现数字验证码");
             element = null;
+        }
+        if (null == element) {
+            return false;
         }
         //是否可见
         boolean displayed = element.isDisplayed();
@@ -262,12 +277,17 @@ public class DefaultHandle extends AbstractHandleService{
         try {
             element = webDriver.findElement(By.className("Captcha-chineseImg"));
         }catch (Exception e) {
+            logger.error("出现中文验证码");
             element = null;
         }
         if (null == element) {
             return false;
         }
-        return true;
+        boolean displayed = element.isDisplayed();
+        if (displayed) {
+            return true;
+        }
+        return false;
     }
 
     private void uploadImage() {
