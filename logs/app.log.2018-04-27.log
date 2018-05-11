@@ -1,0 +1,492 @@
+2018-04-27 00:02:21.044 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 13269714585 成功 
+2018-04-27 00:02:21.064 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中， 跳过注册
+2018-04-27 00:02:21.064 [main] INFO  com.zhihu.openbox.Application - 第 1 次注册完成
+2018-04-27 00:02:22.271 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 13269730248 成功 
+2018-04-27 00:02:32.347 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir16212_10089}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 05a6caa26df12453dc86fa8973425b97
+*** Element info: {Using=class name, value=Captcha-englishContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:232)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:66)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:02:33.515 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 0 次获取验证码，返回值是: 2007
+2018-04-27 00:02:36.568 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 1 次获取验证码，返回值是: 2007
+2018-04-27 00:02:39.638 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 2 次获取验证码，返回值是: 2007
+2018-04-27 00:02:42.708 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 3 次获取验证码，返回值是: 2007
+2018-04-27 00:02:45.842 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 4 次获取验证码，返回值是: 2007
+2018-04-27 00:02:48.900 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 5 次获取验证码，返回值是: 2007
+2018-04-27 00:02:51.953 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 6 次获取验证码，返回值是: 2007
+2018-04-27 00:02:55.007 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 7 次获取验证码，返回值是: 2007
+2018-04-27 00:02:58.061 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 8 次获取验证码，返回值是: 2007
+2018-04-27 00:03:01.202 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 9 次获取验证码，返回值是: 2007
+2018-04-27 00:03:04.254 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 10 次获取验证码，返回值是: 2007
+2018-04-27 00:03:07.317 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 11 次获取验证码，返回值是: 2007
+2018-04-27 00:03:10.407 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 12 次获取验证码，返回值是: 2007
+2018-04-27 00:03:13.515 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13269730248 , 第 13 次获取验证码，返回值是: 2007
+2018-04-27 00:04:01.025 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-chineseContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir10004_18060}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: f641713f7348f9b8206412060f4728ad
+*** Element info: {Using=class name, value=Captcha-chineseContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hashCaptcharContainer(DefaultHandle.java:246)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:62)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:04:02.210 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463413892 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:04:05.280 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463413892 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:04:08.361 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463413892 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:04:11.423 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463413892 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:04:14.502 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463413892 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:04:17.622 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463413892 , 第 5 次获取验证码，返回值是: success|【知乎】创建帐号的验证码是 938355，10 分钟内有效。
+2018-04-27 00:04:23.497 [main] INFO  com.zhihu.openbox.DefaultHandle - 开始上传头像
+2018-04-27 00:04:35.667 [main] INFO  com.zhihu.openbox.Application - 第 1 次注册完成
+2018-04-27 00:04:37.616 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:04:40.681 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:04:44.091 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:04:47.157 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:04:50.236 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:04:53.293 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 5 次获取验证码，返回值是: 3001
+2018-04-27 00:04:56.366 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 6 次获取验证码，返回值是: 3001
+2018-04-27 00:04:59.435 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 7 次获取验证码，返回值是: 3001
+2018-04-27 00:05:02.526 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 8 次获取验证码，返回值是: 3001
+2018-04-27 00:05:05.602 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 9 次获取验证码，返回值是: 3001
+2018-04-27 00:05:08.677 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 10 次获取验证码，返回值是: 3001
+2018-04-27 00:05:11.797 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 11 次获取验证码，返回值是: 3001
+2018-04-27 00:05:14.935 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 12 次获取验证码，返回值是: 3001
+2018-04-27 00:05:18.024 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 13 次获取验证码，返回值是: 3001
+2018-04-27 00:05:21.094 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 14 次获取验证码，返回值是: 3001
+2018-04-27 00:05:24.160 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 15 次获取验证码，返回值是: 3001
+2018-04-27 00:05:27.219 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 16 次获取验证码，返回值是: 3001
+2018-04-27 00:05:30.284 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 17 次获取验证码，返回值是: 3001
+2018-04-27 00:05:33.427 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 18 次获取验证码，返回值是: 3001
+2018-04-27 00:05:36.489 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168063 , 第 19 次获取验证码，返回值是: 3001
+2018-04-27 00:05:39.564 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 13483168063 成功 
+2018-04-27 00:05:39.564 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码 13483168063 获取验证码次数超过规定次数，跳过
+2018-04-27 00:05:39.565 [main] INFO  com.zhihu.openbox.Application - 第 2 次注册完成
+2018-04-27 00:05:41.660 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168615 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:05:44.723 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168615 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:05:47.793 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168615 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:05:50.856 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168615 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:05:53.926 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168615 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:05:56.987 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168615 , 第 5 次获取验证码，返回值是: 3001
+2018-04-27 00:06:00.078 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13483168615 , 第 6 次获取验证码，返回值是: success|【知乎】创建帐号的验证码是 777522，10 分钟内有效。
+2018-04-27 00:08:30.827 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-chineseContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir7048_17820}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: e0941205d41dc79f455e26437e359699
+*** Element info: {Using=class name, value=Captcha-chineseContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hashCaptcharContainer(DefaultHandle.java:246)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:62)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:08:32.065 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055525441 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:08:35.159 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055525441 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:08:38.240 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055525441 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:08:41.398 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055525441 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:09:02.474 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17055662360 成功 
+2018-04-27 00:09:12.500 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir15032_26049}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8f80158830bff2ddcb54a914515c984c
+*** Element info: {Using=class name, value=Captcha-englishContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:232)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:66)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:09:13.733 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 0 次获取验证码，返回值是: 2007
+2018-04-27 00:09:16.811 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 1 次获取验证码，返回值是: 2007
+2018-04-27 00:09:21.002 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 2 次获取验证码，返回值是: 2007
+2018-04-27 00:09:24.087 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 3 次获取验证码，返回值是: 2007
+2018-04-27 00:09:27.191 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 4 次获取验证码，返回值是: 2007
+2018-04-27 00:09:47.256 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 5 次获取验证码，返回值是: 2007
+2018-04-27 00:09:50.490 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 6 次获取验证码，返回值是: 2007
+2018-04-27 00:09:53.674 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 7 次获取验证码，返回值是: 2007
+2018-04-27 00:09:56.831 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 8 次获取验证码，返回值是: 2007
+2018-04-27 00:10:00.059 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 9 次获取验证码，返回值是: 2007
+2018-04-27 00:10:03.135 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 10 次获取验证码，返回值是: 2007
+2018-04-27 00:10:06.214 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 11 次获取验证码，返回值是: 2007
+2018-04-27 00:10:09.290 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055662360 , 第 12 次获取验证码，返回值是: 2007
+2018-04-27 00:10:28.134 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055715007 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:10:31.227 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055715007 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:10:34.403 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055715007 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:10:37.478 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055715007 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:10:40.591 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055715007 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:10:43.702 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055715007 , 第 5 次获取验证码，返回值是: success|【知乎】创建帐号的验证码是 469601，10 分钟内有效。
+2018-04-27 00:10:49.401 [main] INFO  com.zhihu.openbox.DefaultHandle - 开始上传头像
+2018-04-27 00:11:01.518 [main] INFO  com.zhihu.openbox.Application - 第 1 次注册完成
+2018-04-27 00:11:03.344 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:11:06.438 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:11:09.866 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:11:12.956 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:11:16.040 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:11:19.109 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 5 次获取验证码，返回值是: 3001
+2018-04-27 00:11:22.183 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 6 次获取验证码，返回值是: 3001
+2018-04-27 00:11:25.259 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 7 次获取验证码，返回值是: 3001
+2018-04-27 00:11:28.329 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 8 次获取验证码，返回值是: 3001
+2018-04-27 00:11:31.401 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 9 次获取验证码，返回值是: 3001
+2018-04-27 00:11:34.627 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 10 次获取验证码，返回值是: 3001
+2018-04-27 00:11:37.795 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 11 次获取验证码，返回值是: 3001
+2018-04-27 00:11:41.109 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 12 次获取验证码，返回值是: 3001
+2018-04-27 00:11:44.464 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 13 次获取验证码，返回值是: 3001
+2018-04-27 00:11:47.598 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 14 次获取验证码，返回值是: 3001
+2018-04-27 00:11:50.695 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 15 次获取验证码，返回值是: 3001
+2018-04-27 00:11:53.766 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 16 次获取验证码，返回值是: 3001
+2018-04-27 00:11:56.936 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 17 次获取验证码，返回值是: 3001
+2018-04-27 00:12:00.018 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 18 次获取验证码，返回值是: 3001
+2018-04-27 00:12:03.102 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055788653 , 第 19 次获取验证码，返回值是: 3001
+2018-04-27 00:12:06.164 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17055788653 成功 
+2018-04-27 00:12:06.167 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码 17055788653 获取验证码次数超过规定次数，跳过
+2018-04-27 00:12:06.172 [main] INFO  com.zhihu.openbox.Application - 第 2 次注册完成
+2018-04-27 00:12:08.728 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:12:11.795 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:12:14.866 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:12:18.443 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:12:21.527 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:12:25.351 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 5 次获取验证码，返回值是: 3001
+2018-04-27 00:12:28.418 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 6 次获取验证码，返回值是: 3001
+2018-04-27 00:12:31.801 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 7 次获取验证码，返回值是: 3001
+2018-04-27 00:12:34.874 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 8 次获取验证码，返回值是: 3001
+2018-04-27 00:12:37.941 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 9 次获取验证码，返回值是: 3001
+2018-04-27 00:12:41.014 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 10 次获取验证码，返回值是: 3001
+2018-04-27 00:12:44.082 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 11 次获取验证码，返回值是: 3001
+2018-04-27 00:12:47.172 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 12 次获取验证码，返回值是: 3001
+2018-04-27 00:12:50.248 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 13 次获取验证码，返回值是: 3001
+2018-04-27 00:12:53.314 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 14 次获取验证码，返回值是: 3001
+2018-04-27 00:12:56.410 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 15 次获取验证码，返回值是: 3001
+2018-04-27 00:12:59.499 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 16 次获取验证码，返回值是: 3001
+2018-04-27 00:13:02.566 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 17 次获取验证码，返回值是: 3001
+2018-04-27 00:13:05.634 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 18 次获取验证码，返回值是: 3001
+2018-04-27 00:13:08.746 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17055972975 , 第 19 次获取验证码，返回值是: success|【知乎】创建帐号的验证码是 813155，10 分钟内有效。
+2018-04-27 00:16:49.656 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17093344065 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:16:52.736 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17093344065 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:16:55.819 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17093344065 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:16:58.897 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17093344065 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:17:01.974 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17093344065 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:17:14.041 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17093344065 , 第 5 次获取验证码，返回值是: success|【知乎】创建帐号的验证码是 907119，10 分钟内有效。
+2018-04-27 00:17:20.473 [main] INFO  com.zhihu.openbox.DefaultHandle - 开始上传头像
+2018-04-27 00:17:37.579 [main] INFO  com.zhihu.openbox.Application - 第 1 次注册完成
+2018-04-27 00:17:38.317 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 14718939410 成功 
+2018-04-27 00:17:38.332 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中， 跳过注册
+2018-04-27 00:17:38.333 [main] INFO  com.zhihu.openbox.Application - 第 2 次注册完成
+2018-04-27 00:17:40.434 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:17:43.612 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:17:46.712 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:17:49.798 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:17:52.875 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:17:55.962 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 5 次获取验证码，返回值是: 3001
+2018-04-27 00:17:59.132 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 6 次获取验证码，返回值是: 3001
+2018-04-27 00:18:02.245 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 7 次获取验证码，返回值是: 3001
+2018-04-27 00:18:05.324 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 8 次获取验证码，返回值是: 3001
+2018-04-27 00:18:08.435 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 9 次获取验证码，返回值是: 3001
+2018-04-27 00:18:11.515 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 10 次获取验证码，返回值是: 3001
+2018-04-27 00:18:14.776 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 13463879665 , 第 11 次获取验证码，返回值是: 3001
+2018-04-27 00:27:19.804 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13368_10273}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 39813f867bb030dd9ad694c3a35b7042
+*** Element info: {Using=class name, value=Captcha-englishContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:237)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:65)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:27:19.922 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 18458242541 成功 
+2018-04-27 00:27:19.924 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中，跳过注册
+2018-04-27 00:27:19.924 [main] INFO  com.zhihu.openbox.Application - 第 1 次注册完成
+2018-04-27 00:27:30.984 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13368_10273}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 39813f867bb030dd9ad694c3a35b7042
+*** Element info: {Using=class name, value=Captcha-englishContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:237)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:65)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:27:31.121 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17162510677 成功 
+2018-04-27 00:27:31.123 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中，跳过注册
+2018-04-27 00:27:31.125 [main] INFO  com.zhihu.openbox.Application - 第 2 次注册完成
+2018-04-27 00:27:41.880 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13368_10273}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 39813f867bb030dd9ad694c3a35b7042
+*** Element info: {Using=class name, value=Captcha-englishContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:237)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:65)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:27:43.085 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17167340194 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:27:46.224 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17167340194 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:27:49.709 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17167340194 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:27:52.792 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17167340194 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:27:55.887 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17167340194 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:27:59.168 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17167340194 , 第 5 次获取验证码，返回值是: 3001
+2018-04-27 00:28:02.267 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17167340194 , 第 6 次获取验证码，返回值是: 3001
+2018-04-27 00:32:03.155 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir15632_29304}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8fce32e969a5075af7c4bf0e95ed94e8
+*** Element info: {Using=class name, value=Captcha-englishContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:237)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:65)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:32:03.306 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17056225814 成功 
+2018-04-27 00:32:03.312 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中，跳过注册
+2018-04-27 00:32:03.312 [main] INFO  com.zhihu.openbox.Application - 第 1 次注册完成
+2018-04-27 00:32:14.626 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir15632_29304}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8fce32e969a5075af7c4bf0e95ed94e8
+*** Element info: {Using=class name, value=Captcha-englishContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:237)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:65)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:32:14.744 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17078455429 成功 
+2018-04-27 00:32:14.745 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中，跳过注册
+2018-04-27 00:32:14.746 [main] INFO  com.zhihu.openbox.Application - 第 2 次注册完成
+2018-04-27 00:32:25.682 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码： {}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-chineseImg"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir15632_29304}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8fce32e969a5075af7c4bf0e95ed94e8
+*** Element info: {Using=class name, value=Captcha-chineseImg}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasChineseCaptchar(DefaultHandle.java:278)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:71)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:32:29.058 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:32:32.241 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:32:35.326 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:32:38.410 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:32:41.488 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:32:44.574 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 5 次获取验证码，返回值是: 3001
+2018-04-27 00:32:47.655 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 6 次获取验证码，返回值是: 3001
+2018-04-27 00:32:50.737 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 7 次获取验证码，返回值是: 3001
+2018-04-27 00:32:53.826 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 8 次获取验证码，返回值是: 3001
+2018-04-27 00:32:56.915 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 9 次获取验证码，返回值是: 3001
+2018-04-27 00:33:00.001 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 10 次获取验证码，返回值是: 3001
+2018-04-27 00:33:03.079 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17158051046 , 第 11 次获取验证码，返回值是: 3001
+2018-04-27 00:34:21.978 [main] ERROR com.zhihu.openbox.DefaultHandle - 出现中文验证码
+2018-04-27 00:34:23.196 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17138284225 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:34:26.298 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17138284225 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:34:29.384 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17138284225 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:34:32.480 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17138284225 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:34:35.573 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17138284225 , 第 4 次获取验证码，返回值是: 3001
+2018-04-27 00:34:38.680 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17138284225 , 第 5 次获取验证码，返回值是: 3001
+2018-04-27 00:34:42.429 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17138284225 , 第 6 次获取验证码，返回值是: success|【知乎】创建帐号的验证码是 805585，10 分钟内有效。
+2018-04-27 00:34:48.356 [main] INFO  com.zhihu.openbox.DefaultHandle - 开始上传头像
+2018-04-27 00:35:02.341 [main] INFO  com.zhihu.openbox.Application - 第 1 次注册完成
+2018-04-27 00:35:03.115 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17190168614 成功 
+2018-04-27 00:35:03.116 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中， 跳过注册
+2018-04-27 00:35:03.118 [main] INFO  com.zhihu.openbox.Application - 第 2 次注册完成
+2018-04-27 00:35:03.954 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 13483699685 成功 
+2018-04-27 00:35:03.954 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中， 跳过注册
+2018-04-27 00:35:03.954 [main] INFO  com.zhihu.openbox.Application - 第 3 次注册完成
+2018-04-27 00:35:14.644 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishContainer"}
+  (Session info: chrome=66.0.3359.117)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir2396_15689}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.117, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0b19c0b2d93bcd0dbf192efdec60b956
+*** Element info: {Using=class name, value=Captcha-englishContainer}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:237)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:65)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-04-27 00:35:14.756 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 13451472223 成功 
+2018-04-27 00:35:14.758 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中，跳过注册
+2018-04-27 00:35:14.759 [main] INFO  com.zhihu.openbox.Application - 第 4 次注册完成
+2018-04-27 00:35:25.409 [main] ERROR com.zhihu.openbox.DefaultHandle - 出现中文验证码
+2018-04-27 00:35:26.623 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17057594843 , 第 0 次获取验证码，返回值是: 3001
+2018-04-27 00:35:29.715 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17057594843 , 第 1 次获取验证码，返回值是: 3001
+2018-04-27 00:35:32.807 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17057594843 , 第 2 次获取验证码，返回值是: 3001
+2018-04-27 00:35:35.914 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17057594843 , 第 3 次获取验证码，返回值是: 3001
+2018-04-27 00:35:39.207 [main] INFO  com.zhihu.openbox.DefaultHandle - 手机号码: 17057594843 , 第 4 次获取验证码，返回值是: success|【知乎】创建帐号的验证码是 448910，10 分钟内有效。
+2018-04-27 00:35:44.805 [main] INFO  com.zhihu.openbox.DefaultHandle - 开始上传头像
+2018-04-27 00:35:55.931 [main] INFO  com.zhihu.openbox.Application - 第 5 次注册完成

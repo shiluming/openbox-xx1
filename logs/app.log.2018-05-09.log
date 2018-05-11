@@ -1,0 +1,223 @@
+2018-05-09 23:35:12.288 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:35:22.308 [main] ERROR com.zhihu.openbox.DefaultHandle - 出现中文验证码
+2018-05-09 23:35:22.309 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码 img = null,
+2018-05-09 23:35:22.311 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:37:58.238 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishImg"}
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir12248_7417}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.139, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0ad552fcd92643c3aeb3af394f0e38bc
+*** Element info: {Using=class name, value=Captcha-englishImg}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:249)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:67)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-05-09 23:37:58.241 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码 img = null
+2018-05-09 23:37:58.243 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:37:58.259 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码 img = [[ChromeDriver: chrome on XP (0ad552fcd92643c3aeb3af394f0e38bc)] -> class name: Captcha-chineseImg],
+2018-05-09 23:37:58.276 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：true
+2018-05-09 23:37:58.317 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17121103448 成功 
+2018-05-09 23:37:58.318 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中，跳过注册
+2018-05-09 23:37:58.318 [main] INFO  com.zhihu.openbox.Application - 第 1 次注册完成
+2018-05-09 23:37:59.920 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码 img = [[ChromeDriver: chrome on XP (0ad552fcd92643c3aeb3af394f0e38bc)] -> class name: Captcha-englishImg]
+2018-05-09 23:37:59.935 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：true
+2018-05-09 23:38:00.014 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 13059771245 成功 
+2018-05-09 23:38:00.014 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中， 跳过注册
+2018-05-09 23:38:00.016 [main] INFO  com.zhihu.openbox.Application - 第 2 次注册完成
+2018-05-09 23:38:10.716 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishImg"}
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir12248_7417}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.139, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0ad552fcd92643c3aeb3af394f0e38bc
+*** Element info: {Using=class name, value=Captcha-englishImg}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:249)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:67)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-05-09 23:38:10.717 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码 img = null
+2018-05-09 23:38:10.718 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:38:10.728 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码 img = [[ChromeDriver: chrome on XP (0ad552fcd92643c3aeb3af394f0e38bc)] -> class name: Captcha-chineseImg],
+2018-05-09 23:38:10.742 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：true
+2018-05-09 23:38:10.778 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 13083947304 成功 
+2018-05-09 23:38:10.779 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中，跳过注册
+2018-05-09 23:38:10.780 [main] INFO  com.zhihu.openbox.Application - 第 3 次注册完成
+2018-05-09 23:38:11.433 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码 img = [[ChromeDriver: chrome on XP (0ad552fcd92643c3aeb3af394f0e38bc)] -> class name: Captcha-englishImg]
+2018-05-09 23:38:11.446 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:38:21.453 [main] ERROR com.zhihu.openbox.DefaultHandle - 出现中文验证码
+2018-05-09 23:38:21.455 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码 img = null,
+2018-05-09 23:38:21.455 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:40:15.486 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishImg"}
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir6160_28418}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.139, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c9a06b99711d2bba09c011fb0a34c54d
+*** Element info: {Using=class name, value=Captcha-englishImg}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:248)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:66)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-05-09 23:40:15.489 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码 img = null
+2018-05-09 23:40:15.491 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:40:15.505 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码 img = [[ChromeDriver: chrome on XP (c9a06b99711d2bba09c011fb0a34c54d)] -> class name: Captcha-chineseImg],
+2018-05-09 23:40:15.520 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：true
+2018-05-09 23:40:15.563 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17183479770 成功 
+2018-05-09 23:40:15.563 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中，跳过注册
+2018-05-09 23:40:15.563 [main] INFO  com.zhihu.openbox.Application - 第 1 次注册完成
+2018-05-09 23:40:26.621 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码：{}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"Captcha-englishImg"}
+  (Session info: chrome=66.0.3359.139)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'MicroWin10-0414', ip: '192.168.184.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir6160_28418}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.139, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c9a06b99711d2bba09c011fb0a34c54d
+*** Element info: {Using=class name, value=Captcha-englishImg}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:493)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.zhihu.openbox.DefaultHandle.hasEnglishCaptchar(DefaultHandle.java:248)
+	at com.zhihu.openbox.DefaultHandle.handler(DefaultHandle.java:66)
+	at com.zhihu.openbox.Application.main(Application.java:20)
+2018-05-09 23:40:26.621 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码 img = null
+2018-05-09 23:40:26.621 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:40:26.636 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码 img = [[ChromeDriver: chrome on XP (c9a06b99711d2bba09c011fb0a34c54d)] -> class name: Captcha-chineseImg],
+2018-05-09 23:40:26.652 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：true
+2018-05-09 23:40:26.691 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17185237407 成功 
+2018-05-09 23:40:26.691 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中，跳过注册
+2018-05-09 23:40:26.691 [main] INFO  com.zhihu.openbox.Application - 第 2 次注册完成
+2018-05-09 23:40:27.473 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码 img = [[ChromeDriver: chrome on XP (c9a06b99711d2bba09c011fb0a34c54d)] -> class name: Captcha-englishImg]
+2018-05-09 23:40:27.488 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：true
+2018-05-09 23:40:27.591 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17187054016 成功 
+2018-05-09 23:40:27.592 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中， 跳过注册
+2018-05-09 23:40:27.593 [main] INFO  com.zhihu.openbox.Application - 第 3 次注册完成
+2018-05-09 23:40:28.257 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码 img = [[ChromeDriver: chrome on XP (c9a06b99711d2bba09c011fb0a34c54d)] -> class name: Captcha-englishImg]
+2018-05-09 23:40:28.272 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:40:38.327 [main] ERROR com.zhihu.openbox.DefaultHandle - 出现中文验证码
+2018-05-09 23:40:38.328 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码 img = null,
+2018-05-09 23:40:38.328 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:43:07.975 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = [[ChromeDriver: chrome on XP (372261d13a94bbe725b9f4554ff3961d)] -> class name: Captcha-englishImg]
+2018-05-09 23:43:07.992 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:43:18.026 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码不存在
+2018-05-09 23:43:18.027 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = null,
+2018-05-09 23:43:18.029 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:44:59.331 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = [[ChromeDriver: chrome on XP (b708987c649eb94fc3893ab1cb8ff97b)] -> class name: Captcha-englishImg]
+2018-05-09 23:44:59.347 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素存在，display 属性：false
+2018-05-09 23:44:59.355 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:45:09.398 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码不存在
+2018-05-09 23:45:09.399 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = null,
+2018-05-09 23:45:09.399 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:48:53.721 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = [[ChromeDriver: chrome on XP (49b9ffe8b0258b5c841ae74e87204edd)] -> class name: Captcha-englishImg]
+2018-05-09 23:48:53.739 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素存在，display 属性：false
+2018-05-09 23:48:53.739 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：true
+2018-05-09 23:48:53.804 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 15694318274 成功 
+2018-05-09 23:48:53.805 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中
+2018-05-09 23:49:03.931 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码不存在
+2018-05-09 23:49:03.931 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = null,
+2018-05-09 23:49:03.932 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:50:11.764 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = [[ChromeDriver: chrome on XP (a6fdb63df440f4bcf1e004a605748f23)] -> class name: Captcha-englishImg]
+2018-05-09 23:50:11.774 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素存在，src 属性：data:image/jpg;base64,null
+2018-05-09 23:50:11.775 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：true
+2018-05-09 23:50:11.832 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17082064835 成功 
+2018-05-09 23:50:11.835 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中
+2018-05-09 23:50:21.936 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码不存在
+2018-05-09 23:50:21.936 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = null,
+2018-05-09 23:50:21.936 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:56:46.727 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码不存在
+2018-05-09 23:56:46.730 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = null
+2018-05-09 23:56:46.731 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:56:46.745 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = [[ChromeDriver: chrome on XP (a9445664a90a14f12ee7bdc629416eac)] -> class name: Captcha-chineseImg],
+2018-05-09 23:56:46.747 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：true
+2018-05-09 23:56:46.786 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17173605042 成功 
+2018-05-09 23:56:46.786 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中
+2018-05-09 23:57:24.997 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = [[ChromeDriver: chrome on XP (e5c1266d2eed64bea2cc22f9d9565196)] -> class name: Captcha-englishImg]
+2018-05-09 23:57:25.022 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素存在，text = , src = data:image/jpg;base64,null
+2018-05-09 23:57:25.022 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：true
+2018-05-09 23:57:25.061 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 13029115143 成功 
+2018-05-09 23:57:25.062 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中
+2018-05-09 23:57:35.076 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码不存在
+2018-05-09 23:57:35.077 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = null,
+2018-05-09 23:57:35.077 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:58:52.994 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = null
+2018-05-09 23:58:52.999 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:58:53.013 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码不存在
+2018-05-09 23:58:53.013 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = null,
+2018-05-09 23:58:53.013 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:59:14.125 [main] ERROR com.zhihu.openbox.DefaultHandle - 数字验证码不存在
+2018-05-09 23:59:14.127 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = null
+2018-05-09 23:59:14.129 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:59:14.144 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = [[ChromeDriver: chrome on XP (bd2f54c90a7a3e6720839511dfd091d4)] -> class name: Captcha-chineseImg],
+2018-05-09 23:59:14.145 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：true
+2018-05-09 23:59:14.186 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 13043345128 成功 
+2018-05-09 23:59:14.186 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码显示中
+2018-05-09 23:59:35.617 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = null
+2018-05-09 23:59:35.621 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：false
+2018-05-09 23:59:35.644 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码不存在
+2018-05-09 23:59:35.644 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = null,
+2018-05-09 23:59:35.647 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
+2018-05-09 23:59:44.846 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素 img = [[ChromeDriver: chrome on XP (e0f2263fab0f64c844b9dbd5a3397e99)] -> class name: Captcha-englishImg]
+2018-05-09 23:59:44.959 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码元素存在，text = 图形验证码, src = data:image/jpg;base64,null
+2018-05-09 23:59:44.959 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是数字验证码：true
+2018-05-09 23:59:45.001 [main] INFO  com.zhihu.openbox.DefaultSmsImpl - 释放手机号码 17097444774 成功 
+2018-05-09 23:59:45.002 [main] INFO  com.zhihu.openbox.DefaultHandle - 数字验证码显示中
+2018-05-09 23:59:55.054 [main] ERROR com.zhihu.openbox.DefaultHandle - 中文验证码不存在
+2018-05-09 23:59:55.054 [main] INFO  com.zhihu.openbox.DefaultHandle - 中文验证码元素 img = null,
+2018-05-09 23:59:55.056 [main] INFO  com.zhihu.openbox.DefaultHandle - 判断是否是中文验证码：false
